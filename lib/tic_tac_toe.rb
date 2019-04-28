@@ -110,7 +110,7 @@ end
   end
   
    if gotxwin && gotowin
-    [d, r, a, w]
+    false
   elsif gotxwin || gotowin
     windex
   else
