@@ -157,9 +157,20 @@ elsif @board[won?[0]] == "O"
 elsif @board[won?[0]] == "X"
  "X"
  
- end
- 
 end
+end
+
+def play
+  until over?
+  turn
+end
+if winner
+  puts "Congratulations #{winner}!"
+  elsif draw?
+  puts "Cat's Game!"
+end
+end
+
 
   
 end
