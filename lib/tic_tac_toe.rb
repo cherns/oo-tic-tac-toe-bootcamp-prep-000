@@ -137,6 +137,15 @@ def draw?
 end 
   
   
+def over?
+
+if won? || draw? || full?
+  true
+else
+  false
+end
+   
+end  
 
   
 end
