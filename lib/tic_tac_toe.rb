@@ -55,6 +55,20 @@ if (index < 9) && (index >= 0) && @board[index] == " "
 end
 end
 
+def turn
+
+  puts "Please enter 1-9:"
+  movey = gets.strip
+  movey = input_to_index(movey)
+  if valid_move?(movey)
+  move(movey, current_player(board))
+  display_board(board)
+else
+  turn(board)
+end
+
+end
+
   
 end
 
