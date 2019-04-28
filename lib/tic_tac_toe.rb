@@ -92,27 +92,33 @@ else
 end
 end
 
-def won?
+  def won?
     gotxwin = false
     gotowin = false
     windex = []
   WIN_COMBINATIONS.each do |blah| 
     
-if blah.all?{|numb| @board[numb] == "X"}
+   if blah.all?{|numb| @board[numb] == "X"}
    gotxwin = true
    windex = blah
   
-elsif blah.all?{|numb| @board[numb] == "O"}
+   elsif blah.all?{|numb| @board[numb] == "O"}
    gotowin = true
    windex = blah
-end
-  if gotxwin && gotowin
+  end
+  
+  end
+  
+   if gotxwin && gotowin
     [d, r, a, w]
   elsif gotxwin || gotowin
     windex
   else
   false
   end
+  
+  
+  
   
   
 end
