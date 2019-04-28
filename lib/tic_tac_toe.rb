@@ -154,7 +154,7 @@ if !won?
   
 elsif @board[won?[0]] == "O"
  "O"
-elsif @oard[won?[0]] == "X"
+elsif @board[won?[0]] == "X"
  "X"
  
  end
