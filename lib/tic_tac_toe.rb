@@ -37,3 +37,11 @@ def move(index, token="X")
 end  
   
 end
+
+def position_taken?(index)
+if @board[index] == " "
+  false
+else
+  true
+end
+end
