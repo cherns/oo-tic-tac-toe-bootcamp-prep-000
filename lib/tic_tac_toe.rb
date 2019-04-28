@@ -106,6 +106,15 @@ elsif blah.all?{|numb| @board[numb] == "O"}
    gotowin = true
    windex = blah
 end
+  if gotxwin && gotowin
+    [d, r, a, w]
+  elsif gotxwin || gotowin
+    windex
+  else
+  false
+  end
+  
+  
 end
   
 end
