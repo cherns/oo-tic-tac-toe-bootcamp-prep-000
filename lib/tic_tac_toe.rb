@@ -61,10 +61,10 @@ def turn
   movey = gets.strip
   movey = input_to_index(movey)
   if valid_move?(movey)
-  move(movey, current_player(board))
-  display_board(board)
+  move(movey, current_player)
+  display_board
 else
-  turn(board)
+  turn
 end
 
 end
