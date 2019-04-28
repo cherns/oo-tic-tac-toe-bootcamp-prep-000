@@ -44,7 +44,17 @@ else
   true
 end
 end
-  
+
+
+def valid_move?(board, index)
+
+if (index < 9) && (index >= 0) && board[index] == " "
+  true
+    else
+  false
+end
+end
+
   
 end
 
