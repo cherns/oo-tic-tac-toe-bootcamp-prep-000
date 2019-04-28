@@ -46,9 +46,9 @@ end
 end
 
 
-def valid_move?(board, index)
+def valid_move?(index)
 
-if (index < 9) && (index >= 0) && board[index] == " "
+if (index < 9) && (index >= 0) && @board[index] == " "
   true
     else
   false
